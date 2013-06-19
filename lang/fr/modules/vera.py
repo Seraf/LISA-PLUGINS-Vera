@@ -1,10 +1,11 @@
 # -*- coding: UTF-8 -*-
 import urllib, json
 from pymongo import MongoClient
+from jarvis import configuration
 
 class Vera:
     def __init__(self):
-        self.configuration_jarvis = json.load(open('Configuration/jarvis.json'))
+        self.configuration_jarvis = configuration
         mongo = MongoClient(self.configuration_jarvis['database']['server'], \
                             self.configuration_jarvis['database']['port'])
         self.configuration = mongo.jarvis.plugins.find_one({"name": "Vera"})
