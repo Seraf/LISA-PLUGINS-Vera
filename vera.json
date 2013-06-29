@@ -1,11 +1,11 @@
 {
     "name": "Vera",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "Julien Syx",
     "enabled": 1,
     "lang": ["fr"],
     "description": [
-        {"description_fr": "Ce plugin permet de piloter la box domotique Vera de MiCasaVerde"}
+        {"lang": "fr", "description": "Ce plugin permet de piloter la box domotique Vera de MiCasaVerde"}
     ],
     "configuration": {
         "ip": "192.168.1.100",
